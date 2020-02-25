@@ -9,7 +9,7 @@ gem 'bootstrap-sass', '3.3.7'
 gem 'rails-controller-testing'
 gem 'bcrypt', '3.1.12'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3', '~> 1.4'
+#gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 # Use SCSS for stylesheets
@@ -52,6 +52,11 @@ group :test do
   # Easy installation and use of web drivers to run system tests with browsers
   gem 'webdrivers'
 	gem 'minitest'
+	gem 'sqlite3'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
